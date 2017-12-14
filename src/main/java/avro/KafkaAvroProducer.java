@@ -9,7 +9,7 @@ import java.util.Properties;
 public class KafkaAvroProducer {
 
     private static final String SCHEMA_REGISTRY_URL = "schema.registry.url";
-    private static final String TOPIC = "customer-avro";
+    private static final String TOPIC = "consumer";
 
     public static void main(String[] args) {
         Properties properties = new Properties();
@@ -24,7 +24,7 @@ public class KafkaAvroProducer {
         KafkaProducer<String, Customer> kafkaProducer = new KafkaProducer<>(properties);
 
         Customer customer = Customer.newBuilder()
-                .setFirstName("Tomasz")
+                .setFirstName("Ewa")
                 .setLastName("Galuszka")
                 .setAge(26)
                 .setHeight(174)
