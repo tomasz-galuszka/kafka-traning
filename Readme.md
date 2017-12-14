@@ -2,6 +2,7 @@
 ````
 docker run --rm --net=host landoop/fast-data-dev
 ````
+<br/>Open: localhost:3030
 
 **Kafka console avro-consumer**
 <br/>- Start container: ````docker run --net=host -it confluentinc/cp-schema-registry:latest bash````
